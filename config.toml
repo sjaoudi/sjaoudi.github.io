@@ -1,0 +1,112 @@
+title = ""
+theme = "heyo-hugo-theme"
+baseURL = "https://sjaoudi.github.io/"
+languageCode = "en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+summarylength = 100
+enableEmoji = true
+enableRobotsTXT = true
+[caches]
+    [caches.images]
+        dir = ':cacheDir/images'
+
+[pagination]
+    disableAliases = false
+    pagerSize = 3
+    path = ''
+
+[params.author]
+    name = "stephen jaoudi"
+    email = "stephenjaoudi@outlook.com"
+
+[params]
+    title = "My Corner of the Web"
+    description = ""
+    profilePicture = "images/profile.png"
+    favicon = "favicons/"
+    customCss = []
+    customJs = []
+    displayMode = "light"
+    images = ['images/profile.png']
+
+[taxonomies]
+    series = 'series'
+    categories = 'categories'
+    tags = 'tags'
+
+# Sketch settings
+# you can also enable or disable it per page
+[params.sketch] 
+    enable = true 
+    displayOptions = false
+    # Graph, Digital Rain, or Circles
+    use = "Boids"
+    # JSON that is passed to the sketch constructor
+    # You can check all the possible configurations in
+    startingConfig = """{
+        "kind": "graph",
+        "nStreams": 10
+    }"""
+
+## Math settings
+[params.math]
+    enable = true # global support, you can also configure it per page
+    use = "mathjax" # katex or mathjax, default is mathjax
+
+## Social links
+[[params.socialIcons]]
+icon = "fab fa-linkedin" # Font-awesome icon
+title = "Linkedin"
+url = "https://linkedin.com/in/sjaoudi"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/sjaoudi"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:stephenjaoudi@outlook.com"
+
+[languages]
+    [languages.en]
+        languageCode = "en"
+        contentDir = "content/en"
+        weight = 1
+        languageName = "en"
+        [languages.en.menus]
+            [[languages.en.menus.main]]
+                name = "About"
+                pageRef = "/"
+                weight = 1
+            [[languages.en.menus.main]]
+                name = "Posts"
+                pageRef = "/post"
+                weight = 2
+            [[languages.en.menus.main]]
+                name = "Resume (PDF)"
+                url = "/resume.pdf"
+                weight = 3
+[markup]
+    [markup.goldmark.renderer]
+        unsafe = true
+    [markup.tableOfContents]
+        endLevel = 6
+        startLevel = 1
+    [markup.highlight]
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = false
+        hl_Lines = ""
+        lineAnchors = ""
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = true
+        noClasses = true
+        style = "dracula"
+        tabWidth = 4
+
+# Hugo will ignore these files, .rmd and .rmarkdown are taken care by blogdown
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown", "_files$", "_cache$"]
