@@ -87,7 +87,7 @@ url = "mailto:stephenjaoudi@outlook.com"
                 weight = 2
             [[languages.en.menus.main]]
                 name = "Resume (PDF)"
-                url = "/resume.pdf"
+                url = "/sj-resume.pdf"
                 weight = 3
 [markup]
     [markup.goldmark.renderer]
