@@ -1,5 +1,5 @@
 ---
-author: Stephen Jaoudi
+author: 
 title: NES Emulator in C
 date: 2021-05-18
 tags: 

@@ -17,7 +17,7 @@ enableRobotsTXT = true
     path = ''
 
 [params.author]
-    name = "stephen jaoudi"
+    name = "stephen"
     email = "stephenjaoudi@outlook.com"
 
 [params]
@@ -41,7 +41,7 @@ enableRobotsTXT = true
     enable = true 
     displayOptions = false
     # Graph, Digital Rain, or Circles
-    use = "Boids"
+    use = "Graph"
     # JSON that is passed to the sketch constructor
     # You can check all the possible configurations in
     startingConfig = """{

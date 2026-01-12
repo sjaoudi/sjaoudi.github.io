@@ -1,5 +1,5 @@
 ---
-author: Stephen Jaoudi
+author: ""
 title: "Who Am I?"
 description: "About heyo"
 date: 2023-08-01

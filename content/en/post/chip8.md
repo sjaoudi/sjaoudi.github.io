@@ -1,5 +1,5 @@
 ---
-author: Stephen Jaoudi
+author: 
 title: CHIP-8 Emulator in C
 date: 2016-01-15
 tags: 
